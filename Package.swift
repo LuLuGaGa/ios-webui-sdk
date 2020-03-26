@@ -2,13 +2,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "QueueITLib",
+    name: "QueueITLibrary",
     platforms: [
-        .iOS("9.3")
+        .iOS(.v9)
     ],
+    products: [
+        .library(name: "QueueITLibrary", targets: ["QueueITLibrary"]),
+    ],
+    dependencies: [],
     targets: [
         .target(
-            name: "QueueITLib",
+            name: "QueueITLibrary",
             path: "QueueITLib"
         )
     ]
