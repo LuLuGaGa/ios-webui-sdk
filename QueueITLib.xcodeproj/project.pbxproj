@@ -54,6 +54,7 @@
 		65D5C4DC242DFC5100F8ADEF /* QueueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueService.h; sourceTree = "<group>"; };
 		65D5C4DD242DFC5100F8ADEF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		65D5C4E6242E0ED800F8ADEF /* QueueITEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueITEngine.h; sourceTree = "<group>"; };
+		65D5C4EA242E166D00F8ADEF /* QueuePassedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueuePassedInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		6587EF69242DE92800F34DA4 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				65D5C4EA242E166D00F8ADEF /* QueuePassedInfo.h */,
 				65D5C4D9242DF6FA00F8ADEF /* QueueITEngine.h */,
 			);
 			path = include;
