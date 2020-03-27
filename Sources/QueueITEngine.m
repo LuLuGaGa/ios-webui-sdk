@@ -1,4 +1,8 @@
+#if SWIFT_PACKAGE
+#import <include/QueueITEngine.h>
+#else
 #import "QueueITEngine.h"
+#endif
 #import "QueueITWKViewController.h"
 #import "QueueService.h"
 #import "QueueStatus.h"
