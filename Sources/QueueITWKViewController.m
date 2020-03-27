@@ -1,6 +1,5 @@
-#import <WebKit/WebKit.h>
-#import "QueueITEngine.h"
-#endif
+#import "QueueITWKViewController.h"
+
 @interface QueueITWKViewController ()<WKNavigationDelegate>
 @property (nonatomic) WKWebView* webView;
 @property (nonatomic, strong) UIViewController* host;

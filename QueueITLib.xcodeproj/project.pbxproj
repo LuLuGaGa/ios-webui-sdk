@@ -16,6 +16,7 @@
 		6587EF85242DED0E00F34DA4 /* QueueService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587EF76242DED0E00F34DA4 /* QueueService.m */; };
 		6587EF86242DED0E00F34DA4 /* QueueITWKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587EF78242DED0E00F34DA4 /* QueueITWKViewController.m */; };
 		6587EF87242DED0E00F34DA4 /* QueuePassedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587EF79242DED0E00F34DA4 /* QueuePassedInfo.m */; };
+		65D5C4DE242DFC5100F8ADEF /* QueueStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5C4DB242DFC5100F8ADEF /* QueueStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,10 @@
 		6587EF7B242DED0E00F34DA4 /* QueueITEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueITEngine.h; sourceTree = "<group>"; };
 		6587EF7C242DED0E00F34DA4 /* IOSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSUtils.h; sourceTree = "<group>"; };
 		65D5C4D9242DF6FA00F8ADEF /* QueueITEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueITEngine.h; sourceTree = "<group>"; };
+		65D5C4DA242DFC5100F8ADEF /* QueuePassedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueuePassedInfo.h; sourceTree = "<group>"; };
+		65D5C4DB242DFC5100F8ADEF /* QueueStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueStatus.m; sourceTree = "<group>"; };
+		65D5C4DC242DFC5100F8ADEF /* QueueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueService.h; sourceTree = "<group>"; };
+		65D5C4DD242DFC5100F8ADEF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,10 @@
 		6587EF6A242DE93B00F34DA4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				65D5C4DA242DFC5100F8ADEF /* QueuePassedInfo.h */,
+				65D5C4DC242DFC5100F8ADEF /* QueueService.h */,
+				65D5C4DB242DFC5100F8ADEF /* QueueStatus.m */,
+				65D5C4DD242DFC5100F8ADEF /* Reachability.h */,
 				6587EF7C242DED0E00F34DA4 /* IOSUtils.h */,
 				6587EF70242DED0D00F34DA4 /* IOSUtils.m */,
 				6587EF73242DED0D00F34DA4 /* QueueCache.h */,
@@ -172,6 +181,7 @@
 				6587EF85242DED0E00F34DA4 /* QueueService.m in Sources */,
 				6587EF81242DED0E00F34DA4 /* Reachability.m in Sources */,
 				6587EF83242DED0E00F34DA4 /* QueueService_NSURLConnection.m in Sources */,
+				65D5C4DE242DFC5100F8ADEF /* QueueStatus.m in Sources */,
 				6587EF84242DED0E00F34DA4 /* QueueCache.m in Sources */,
 				6587EF7F242DED0E00F34DA4 /* QueueService_NSURLConnectionRequest.m in Sources */,
 				6587EF86242DED0E00F34DA4 /* QueueITWKViewController.m in Sources */,
