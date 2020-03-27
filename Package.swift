@@ -19,7 +19,7 @@ let package = Package(
             path: "QueueITLibrary",
             cSettings: [
                 .define("SWIFT_PACKAGE"),
-                .headerSearchPath("../../QueueITLibrary/include")
+                .headerSearchPath("../QueueITLibrary/include")
             ]
         )
     ]
