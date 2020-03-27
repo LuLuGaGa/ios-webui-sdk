@@ -13,7 +13,8 @@ let package = Package(
     targets: [
         .target(
             name: "QueueITLibrary",
-            path: "QueueITLib"
+            path: "Sources",
+            publicHeadersPath: nil
         )
     ]
 )
