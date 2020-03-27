@@ -1,5 +1,5 @@
 #if SWIFT_PACKAGE
-#include <ios-webui-sdk/QueueITEngine.h>
+#include <QueueITLibrary/QueueITEngine.h>
 #else
 #import "QueueITEngine.h"
 #endif
