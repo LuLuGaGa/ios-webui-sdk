@@ -14,7 +14,7 @@ let package = Package(
         .target(
             name: "QueueITLibrary",
             path: "Sources",
-            publicHeadersPath: nil
+            publicHeadersPath: "include"
         )
     ]
 )
