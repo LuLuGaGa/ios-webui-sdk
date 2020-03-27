@@ -7,17 +7,19 @@ let package = Package(
         .iOS(.v9)
     ],
     products: [
-        .library(name: "QueueITLibrary", targets: ["QueueITLibrary"]),
+        .library(name: "QueueITLibrary",
+                 targets: ["QueueITLibrary"]
+        ),
     ],
     dependencies: [],
     targets: [
         .target(
             name: "QueueITLibrary",
-            path: "Sources",
+            dependencies: [],
+            path: "QueueITLibrary",
             cSettings: [
                 .define("SWIFT_PACKAGE"),
-                .headerSearchPath("include"),
-                .headerSearchPath("Sources"),
+                .headerSearchPath("../../QueueITLibrary/include")
             ]
         )
     ]

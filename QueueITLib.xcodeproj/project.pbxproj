@@ -47,13 +47,13 @@
 		6587EF78242DED0E00F34DA4 /* QueueITWKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueITWKViewController.m; sourceTree = "<group>"; };
 		6587EF79242DED0E00F34DA4 /* QueuePassedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueuePassedInfo.m; sourceTree = "<group>"; };
 		6587EF7A242DED0E00F34DA4 /* QueueService_NSURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueService_NSURLConnection.h; sourceTree = "<group>"; };
-		6587EF7B242DED0E00F34DA4 /* QueueITEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueITEngine.h; sourceTree = "<group>"; };
 		6587EF7C242DED0E00F34DA4 /* IOSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSUtils.h; sourceTree = "<group>"; };
 		65D5C4D9242DF6FA00F8ADEF /* QueueITEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueITEngine.h; sourceTree = "<group>"; };
 		65D5C4DA242DFC5100F8ADEF /* QueuePassedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueuePassedInfo.h; sourceTree = "<group>"; };
 		65D5C4DB242DFC5100F8ADEF /* QueueStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueStatus.m; sourceTree = "<group>"; };
 		65D5C4DC242DFC5100F8ADEF /* QueueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueService.h; sourceTree = "<group>"; };
 		65D5C4DD242DFC5100F8ADEF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		65D5C4E6242E0ED800F8ADEF /* QueueITEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueITEngine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,7 @@
 		1DE12F7B1B57E2EC00DD3BBE = {
 			isa = PBXGroup;
 			children = (
-				6587EF69242DE92800F34DA4 /* include */,
-				6587EF6A242DE93B00F34DA4 /* Sources */,
+				65D5C4E4242E0E1400F8ADEF /* QueueITLibrary */,
 				1DE12F851B57E2ED00DD3BBE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,31 +91,32 @@
 			path = include;
 			sourceTree = "<group>";
 		};
-		6587EF6A242DE93B00F34DA4 /* Sources */ = {
+		65D5C4E4242E0E1400F8ADEF /* QueueITLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				65D5C4DA242DFC5100F8ADEF /* QueuePassedInfo.h */,
-				65D5C4DC242DFC5100F8ADEF /* QueueService.h */,
-				65D5C4DB242DFC5100F8ADEF /* QueueStatus.m */,
-				65D5C4DD242DFC5100F8ADEF /* Reachability.h */,
+				6587EF69242DE92800F34DA4 /* include */,
 				6587EF7C242DED0E00F34DA4 /* IOSUtils.h */,
 				6587EF70242DED0D00F34DA4 /* IOSUtils.m */,
 				6587EF73242DED0D00F34DA4 /* QueueCache.h */,
 				6587EF75242DED0D00F34DA4 /* QueueCache.m */,
+				65D5C4E6242E0ED800F8ADEF /* QueueITEngine.h */,
 				6587EF6C242DED0D00F34DA4 /* QueueITEngine.m */,
-				6587EF7B242DED0E00F34DA4 /* QueueITEngine.h */,
 				6587EF6F242DED0D00F34DA4 /* QueueITWKViewController.h */,
 				6587EF78242DED0E00F34DA4 /* QueueITWKViewController.m */,
+				65D5C4DA242DFC5100F8ADEF /* QueuePassedInfo.h */,
 				6587EF79242DED0E00F34DA4 /* QueuePassedInfo.m */,
 				6587EF7A242DED0E00F34DA4 /* QueueService_NSURLConnection.h */,
 				6587EF74242DED0D00F34DA4 /* QueueService_NSURLConnection.m */,
 				6587EF71242DED0D00F34DA4 /* QueueService_NSURLConnectionRequest.h */,
 				6587EF6B242DED0D00F34DA4 /* QueueService_NSURLConnectionRequest.m */,
+				65D5C4DC242DFC5100F8ADEF /* QueueService.h */,
 				6587EF76242DED0E00F34DA4 /* QueueService.m */,
 				6587EF77242DED0E00F34DA4 /* QueueStatus.h */,
+				65D5C4DB242DFC5100F8ADEF /* QueueStatus.m */,
+				65D5C4DD242DFC5100F8ADEF /* Reachability.h */,
 				6587EF6D242DED0D00F34DA4 /* Reachability.m */,
 			);
-			path = Sources;
+			path = QueueITLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,18 +298,25 @@
 		1DE12F991B57E2EE00DD3BBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		1DE12F9A1B57E2EE00DD3BBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

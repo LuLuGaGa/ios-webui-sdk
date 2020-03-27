@@ -1,5 +1,5 @@
 #if SWIFT_PACKAGE
-#include <QueueITLibrary/QueueITEngine.h>
+#import <QueueITLibrary/QueueITEngine.h>
 #else
 #import "QueueITEngine.h"
 #endif
