@@ -1,6 +1,6 @@
 #import <WebKit/WebKit.h>
 #if SWIFT_PACKAGE
-#import "include/QueueITEngine.h"
+#include "QueueITEngine.h"
 #else
 #import "QueueITEngine.h"
 #endif
