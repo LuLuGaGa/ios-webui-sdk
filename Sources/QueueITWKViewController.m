@@ -1,7 +1,4 @@
-#import "QueueITWKViewController.h"
-#if SWIFT_PACKAGE
-#import <include/QueueITEngine.h>
-#else
+#import <WebKit/WebKit.h>
 #import "QueueITEngine.h"
 #endif
 @interface QueueITWKViewController ()<WKNavigationDelegate>
