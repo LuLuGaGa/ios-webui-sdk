@@ -14,7 +14,11 @@ let package = Package(
         .target(
             name: "QueueITLibrary",
             path: "Sources",
-            publicHeadersPath: "include"
+            cSettings: [
+                .define("SWIFT_PACKAGE"),
+                .headerSearchPath("include"),
+                .headerSearchPath("Sources"),
+            ]
         )
     ]
 )
