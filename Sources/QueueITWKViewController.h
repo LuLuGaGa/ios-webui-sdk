@@ -1,5 +1,9 @@
 #import <WebKit/WebKit.h>
+#if SWIFT_PACKAGE
+#import <include/QueueITEngine.h>
+#else
 #import "QueueITEngine.h"
+#endif
 
 @interface QueueITWKViewController : UIViewController
 

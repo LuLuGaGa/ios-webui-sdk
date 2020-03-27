@@ -1,6 +1,9 @@
 #import "QueueITWKViewController.h"
+#if SWIFT_PACKAGE
+#import <include/QueueITEngine.h>
+#else
 #import "QueueITEngine.h"
-
+#endif
 @interface QueueITWKViewController ()<WKNavigationDelegate>
 @property (nonatomic) WKWebView* webView;
 @property (nonatomic, strong) UIViewController* host;
