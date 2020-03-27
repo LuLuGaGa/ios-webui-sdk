@@ -48,6 +48,7 @@
 		6587EF7A242DED0E00F34DA4 /* QueueService_NSURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueService_NSURLConnection.h; sourceTree = "<group>"; };
 		6587EF7B242DED0E00F34DA4 /* QueueITEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueITEngine.h; sourceTree = "<group>"; };
 		6587EF7C242DED0E00F34DA4 /* IOSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSUtils.h; sourceTree = "<group>"; };
+		65D5C4D9242DF6FA00F8ADEF /* QueueITEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueITEngine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		6587EF69242DE92800F34DA4 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				65D5C4D9242DF6FA00F8ADEF /* QueueITEngine.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
