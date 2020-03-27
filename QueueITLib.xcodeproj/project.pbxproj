@@ -81,7 +81,6 @@
 		6587EF69242DE92800F34DA4 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				6587EF7B242DED0E00F34DA4 /* QueueITEngine.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -94,6 +93,7 @@
 				6587EF73242DED0D00F34DA4 /* QueueCache.h */,
 				6587EF75242DED0D00F34DA4 /* QueueCache.m */,
 				6587EF6C242DED0D00F34DA4 /* QueueITEngine.m */,
+				6587EF7B242DED0E00F34DA4 /* QueueITEngine.h */,
 				6587EF6F242DED0D00F34DA4 /* QueueITWKViewController.h */,
 				6587EF78242DED0E00F34DA4 /* QueueITWKViewController.m */,
 				6587EF79242DED0E00F34DA4 /* QueuePassedInfo.m */,
