@@ -7,11 +7,11 @@
 #import "QueueService.h"
 #import "QueueStatus.h"
 #import "IOSUtils.h"
-#import "Reachability.h"
+#import "QueueReachability.h"
 #import "QueueCache.h"
 
 @interface QueueITEngine()
-@property (nonatomic) Reachability *internetReachability;
+@property (nonatomic) QueueReachability *internetReachability;
 @property (nonatomic, strong)UIViewController* host;
 @property (nonatomic, strong)NSString* customerId;
 @property (nonatomic, strong)NSString* eventId;
@@ -43,7 +43,7 @@ static int INITIAL_WAIT_RETRY_SEC = 1;
         self.delayInterval = 0;
         self.isInQueue = NO;
         self.requestInProgress = NO;
-        self.internetReachability = [Reachability reachabilityForInternetConnection];
+        self.internetReachability = [QueueReachability reachabilityForInternetConnection];
         self.deltaSec = INITIAL_WAIT_RETRY_SEC;
     }
     return self;
