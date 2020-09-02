@@ -57,7 +57,7 @@ typedef enum : NSInteger {
 } NetworkStatus;
 
 
-extern NSString *kReachabilityChangedNotification;
+extern NSString *ReachabilityChangedNotification;
 
 
 @interface QueueReachability : NSObject
